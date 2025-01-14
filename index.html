@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li onclick="showProducts()">Главная</li>
+            <li onclick="showFavs()">Избранное</li>
+        </ul>
+    </nav>
+    <table id="favs" class="products">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Название</th>
+            </tr>
+        </thead>
+        <tbody id="products-body">
+        </tbody>
+    </table>
+    <table class="products" id="products">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Название</th>
+                <th>Цена</th>
+            </tr>
+        </thead>
+        <tbody id="products-body">
+        </tbody>
+    </table>
+    <div id="modal">
+        <div id="modal-content">
+            <img alt="product image" id="modal-image">
+            <div>
+                <p id="modal-category"></p>
+                <p id="modal-desc"></p>
+                <button id="modal-fav">Добавить в избранное</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js" async></script>
+</html>

@@ -1,0 +1,107 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+/* Nav */
+nav {
+    padding: 10px 20px;
+    background-color: aqua;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0 40px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+nav li:hover {
+    background-color: dimgrey;
+    color: white;
+}
+
+/* Favs */
+#favs {
+    display: none;
+}
+
+/* Products */
+.products {
+    margin: 10px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.products thead {
+    background-color: aqua;
+    font-size: 22px;
+}
+
+.products td, .products th {
+    padding: 6px 12px;
+}
+
+.products td {
+    cursor: pointer;
+}
+
+.products tbody tr:hover {
+    background-color: dimgray;
+    opacity: 0.5;
+    color: white;
+}
+
+/* Modal */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0.98;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-content {
+    border-radius: 12px;
+    background-color: white;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20% auto;
+    padding: 6px 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#modal-image {
+    width: 300px;
+    height: auto;
+}
+
+#modal-category {
+    font-size: 18px;
+}
+
+/* Buttons */
+button {
+    background-color: aqua;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: 4px 10px;
+}
